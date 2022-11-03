@@ -10,7 +10,6 @@ phases:
       - echo DB USERNAME
       - echo $DB_USERNAME
       - echo Installing source NPM dependencies...
-      - mvn install
       - aws --version
       - echo node environment
       - echo $NODE_ENV
@@ -19,7 +18,6 @@ phases:
       - echo Build started on `date`
       - echo first test codes
       - echo Compiling the codes
-      - mvn run build
       - echo Build finished, now moving to S3
   post_build:
     commands:
