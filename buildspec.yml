@@ -27,5 +27,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - 'buildspec/*'
-  name: artifactbash
+    - buildspec.yml
+    - target/SampleMavenTomcatApp.war
+    - scripts/*
